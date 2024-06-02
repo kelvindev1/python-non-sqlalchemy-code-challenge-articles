@@ -58,6 +58,9 @@ class Article:
             # if not an instance error
             TypeError("Magazine must be an instance of Magazine")
 
+    def __repr__(self):
+       return f'<Article: author={self.author.name}, magazine={self.magazine.name}, title="{self.title}">'
+
 
 
 class Author:
@@ -112,6 +115,9 @@ class Author:
         else:
             return None
 
+    def __repr__(self):
+        return f'<Author: name = {self.name}>'
+    
 
 
 class Magazine:
@@ -203,6 +209,8 @@ class Magazine:
         else:
             return None
         
+    def __repr__(self):
+        return f'<Magazine: name = {self.name}, category = {self.category}>'
 
 
     """
